@@ -517,4 +517,89 @@ int main() {
 }
 
 46. Sum of even numbers
+#include <stdio.h>
+int main()
+{
+    int start, end, sum = 0, i;
+    printf("Enter start and end values: ");
+    scanf("%d%d", &start, &end);
+    for(i = start; i <= end; i++)
+    {
+        if(i % 2 == 0)
+            sum = sum + i;
+    }
+    printf("Sum of Even Numbers = %d", sum);
+    return 0;
+}
 
+47. Program to find sum of odd numbers in a user-given range
+#include <stdio.h>
+int main()
+{
+    int start, end, sum = 0, i;
+    printf("Enter start and end values: ");
+    scanf("%d%d", &start, &end);
+    for(i = start; i <= end; i++)
+    {
+        if(i % 2 != 0)
+            sum = sum + i;
+    }
+    printf("Sum of Odd Numbers = %d", sum);
+    return 0;
+}
+
+48. Program to check and return true if number is prime else false
+#include <stdio.h>
+int main()
+{
+    int num, i, count = 0;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    for(i = 1; i <= num; i++)
+    {
+        if(num % i == 0)
+            count++;
+    }
+    if(count == 2)
+        printf("true");
+    else
+        printf("false");
+    return 0;
+}
+
+49. prime numbers in the user-given range
+
+#include <stdio.h>
+int main()
+{
+    int start, end, i, j, count;
+    printf("Enter start and end values: ");
+    scanf("%d%d", &start, &end);
+    for(i = start; i <= end; i++)
+    {
+        count = 0;
+        for(j = 1; j <= i; j++)
+        {
+            if(i % j == 0)
+                count++;
+        }
+        if(count == 2)
+            printf("%d ", i);
+    }
+    return 0;
+}
+
+50.Random number from user-given range
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main()
+{
+    int start, end, random;
+    printf("Enter start and end values: ");
+    scanf("%d%d", &start, &end);
+    srand(time(0));
+    random = rand() % (end - start + 1) + start;
+    printf("Random Number = %d", random);
+    return 0;
+}
