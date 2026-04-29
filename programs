@@ -54,6 +54,7 @@ int main()
   return 0;
 }
 
+
 7.Divide two numbers
 #include <stdio.h>
 int main() 
