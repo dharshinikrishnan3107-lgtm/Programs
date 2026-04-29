@@ -1,0 +1,519 @@
+1.Print plain text “Hello World”
+#include<iostream>
+int main()
+{
+  printf("Hello World")
+  return 0
+}
+
+2.Multiple lines using single output
+#include<stdio.h>
+int main() 
+{
+  printf("Priya Darshini\nNo: 10, Anna Nagar\nChennai\nTamil Nadu");
+  return 0;
+}
+
+3.Single line using multiple output
+#include<stdio.h>
+int main() 
+{
+  printf("ABC ");
+  printf("Company ");
+  printf("Chennai");
+  return 0;
+}
+
+4.Add two numbers
+#include <stdio.h>
+int main() 
+{
+  int a = 10, b = 5, sum;
+  sum = a + b;
+  printf("Sum = %d", sum);
+  return 0;
+}
+
+5.Subtracttwo numbers
+#include<stdio.h>
+int main() 
+{
+  int a = 10, b = 5, sub;
+  sub = a - b;
+  printf("Subtraction = %d", sub);
+  return 0;
+}
+
+6.Multiply two numbers
+#include<stdio.h>
+int main() 
+{
+  int a = 10, b = 5, mul;
+  mul = a * b;
+  printf("Multiplication = %d", mul);
+  return 0;
+}
+
+7.Divide two numbers
+#include <stdio.h>
+int main() 
+{
+  int a = 10, b = 5, div;
+  div = a / b;
+  printf("Division = %d", div);
+  return 0;
+}
+
+8. Add two numbers
+#include<stdio.h>
+int main() {
+    int a, b, sum;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+    sum = a + b;
+    printf("Sum = %d", sum);
+    return 0;
+}
+
+9. Subtract
+#include <stdio.h>
+int main() {
+    int a, b, sub;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+    sub = a - b;
+    printf("Subtraction = %d", sub);
+    return 0;
+}
+
+10. Multiply
+#include <stdio.h>
+int main() {
+    int a, b, mul;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+    mul = a * b;
+    printf("Multiplication = %d", mul);
+    return 0;
+}
+
+11. Divide
+#include <stdio.h>
+int main() {
+    int a, b;
+    float div;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+    div = (float)a / b;
+    printf("Division = %.2f", div);
+    return 0;
+}
+
+12. Area of Square
+#include <stdio.h>
+int main() {
+    int a, area;
+    printf("Enter side: ");
+    scanf("%d", &a);
+    area = a * a;
+    printf("Area = %d", area);
+    return 0;
+}
+
+13. Area of Rectangle
+#include <stdio.h>
+int main() {
+    int l, w, area;
+    printf("Enter length and width: ");
+    scanf("%d %d", &l, &w);
+    area = l * w;
+    printf("Area = %d", area);
+    return 0;
+}
+
+14. Area of Circle
+#include <stdio.h>
+int main() {
+    float r, area;
+    printf("Enter radius: ");
+    scanf("%f", &r);
+    area = 3.14 * r * r;
+    printf("Area = %.2f", area);
+    return 0;
+}
+
+15. Area of Triangle
+#include <stdio.h>
+int main() {
+    float b, h, area;
+    printf("Enter base and height: ");
+    scanf("%f %f", &b, &h);
+    area = 0.5 * b * h;
+    printf("Area = %.2f", area);
+    return 0;
+}
+
+16. Swap using third variable
+#include <stdio.h>
+int main() {
+    int a = 10, b = 20, temp;
+    temp = a;
+    a = b;
+    b = temp;
+    printf("a=%d b=%d", a, b);
+    return 0;
+}
+
+17. Swap without third variable
+#include <stdio.h>
+int main() {
+    int a = 10, b = 20;
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    printf("a=%d b=%d", a, b);
+    return 0;
+}
+
+18. Typecasting
+#include <stdio.h>
+int main() {
+    int a = 10, b = 3;
+    float result;
+    result = (float)a / b;
+    printf("Result = %.2f", result);
+    return 0;
+}
+
+19. Random 4 digit number
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+    int num;
+    num = rand() % 9000 + 1000;
+    printf("Random number: %d", num);
+    return 0;
+}
+
+20. Roots of quadratic equation
+#include <stdio.h>
+#include <math.h>
+int main() {
+    float a, b, c, d, r1, r2;
+    printf("Enter a, b, c: ");
+    scanf("%f %f %f", &a, &b, &c);
+    d = b*b - 4*a*c;
+    if(d >= 0) {
+        r1 = (-b + sqrt(d)) / (2*a);
+        r2 = (-b - sqrt(d)) / (2*a);
+        printf("Roots = %.2f %.2f", r1, r2);
+    } else {
+        printf("Imaginary roots");
+    }
+    return 0;
+}
+
+21. Math functions
+#include <stdio.h>
+#include <math.h>
+int main() {
+    printf("Square root = %.2f\n", sqrt(16));
+    printf("Power = %.2f\n", pow(2,3));
+    printf("Ceil = %.2f\n", ceil(2.3));
+    printf("Floor = %.2f\n", floor(2.7));
+    return 0;
+}
+
+22. Check even,return true
+#include <stdio.h>
+int main() {
+    int n;
+    printf("Enter number: ");
+    scanf("%d", &n);
+    if(n % 2 == 0)
+        printf("true");
+    else
+        printf("false");
+    return 0;
+}
+
+23. Check even or not
+#include <stdio.h>
+int main() {
+    int n;
+    scanf("%d", &n);
+    if(n % 2 == 0)
+        printf("Even");
+    else
+        printf("Not Even");
+    return 0;
+}
+
+24. Even or Odd
+#include <stdio.h>
+int main() {
+    int n;
+    scanf("%d", &n);
+    if(n % 2 == 0)
+        printf("Even");
+    else
+        printf("Odd");
+    return 0;
+}
+
+25. Even or Odd (without %)
+#include <stdio.h>
+int main() {
+    int n;
+    scanf("%d", &n);
+    if((n/2)*2 == n)
+        printf("Even");
+    else
+        printf("Odd");
+    return 0;
+}
+
+26. Greatest of 2 numbers
+#include <stdio.h>
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+    if(a > b)
+        printf("Greatest = %d", a);
+    else
+        printf("Greatest = %d", b);
+    return 0;
+}
+
+27. Minimum of 2 numbers
+#include <stdio.h>
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+    if(a < b)
+        printf("Minimum = %d", a);
+    else
+        printf("Minimum = %d", b);
+    return 0;
+}
+
+28. Check positive or not
+#include <stdio.h>
+int main() {
+    int n;
+    scanf("%d", &n);
+    if(n > 0)
+        printf("Positive");
+    else
+        printf("Not Positive");
+    return 0;
+}
+
+29. Positive or Negative
+#include <stdio.h>
+int main() {
+    int n;
+    scanf("%d", &n);
+    if(n >= 0)
+        printf("Positive");
+    else
+        printf("Negative");
+    return 0;
+}
+
+30. Even or Odd using conditional operator
+#include <stdio.h>
+int main() {
+    int n;
+    scanf("%d", &n);
+    (n % 2 == 0) ? printf("Even") : printf("Odd");
+    return 0;
+}
+
+31. if-else & conditional operator
+#include <stdio.h>
+int main() {
+    int n = 10;
+    if(n > 5)
+        printf("Greater\n");
+    else
+        printf("Smaller\n");
+    (n % 2 == 0) ? printf("Even") : printf("Odd");
+    return 0;
+}
+
+32. Check student pass
+#include <stdio.h>
+int main() {
+    int m1, m2, m3;
+    scanf("%d %d %d", &m1, &m2, &m3);
+    if(m1>=35 && m2>=35 && m3>=35)
+        printf("true");
+    else
+        printf("false");
+    return 0;
+}
+
+33. Withdrawal
+#include <stdio.h>
+int main() {
+    int balance=1000, amount;
+    scanf("%d", &amount);
+    if(amount <= balance) {
+        if(amount % 100 == 0) {
+            balance -= amount;
+            printf("Withdraw success, Balance=%d", balance);
+        } else {
+            printf("Enter multiples of 100");
+        }
+    } else {
+        printf("Insufficient balance");
+    }
+    return 0;
+}
+
+34. Vowel check
+#include <stdio.h>
+int main() {
+    char ch;
+    scanf("%c", &ch);
+    if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+        printf("Vowel");
+    else
+        printf("Not Vowel");
+    return 0;
+}
+
+35. Student grade
+#include <stdio.h>
+int main() {
+    int m;
+    scanf("%d", &m);
+    if(m>=90) printf("A");
+    else if(m>=75) printf("B");
+    else if(m>=50) printf("C");
+    else printf("Fail");
+    return 0;
+}
+
+36. Simple ATM
+#include <stdio.h>
+int main() {
+    int choice, balance=1000, amt;
+    printf("1.Deposit 2.Withdraw 3.Balance\n");
+    scanf("%d",&choice);
+    if(choice==1){
+        scanf("%d",&amt);
+        balance+=amt;
+    }
+    else if(choice==2){
+        scanf("%d",&amt);
+        if(amt<=balance) balance-=amt;
+    }
+    else if(choice==3){
+        printf("Balance=%d",balance);
+    }
+    return 0;
+}
+
+37.Print 1 to 10 using while
+#include <stdio.h>
+int main() {
+    int i = 1;
+    while(i <= 10) {
+        printf("%d ", i);
+        i++;
+    }
+    return 0;
+}
+38.Print 1 to 10 using do while
+#include <stdio.h>
+int main() {
+    int i = 1;
+    do {
+        printf("%d ", i);
+        i++;
+    } while(i <= 10);
+    return 0;
+}
+39.Print 1 to 10 using for
+#include <stdio.h>
+int main() {
+    for(int i = 1; i <= 10; i++) {
+        printf("%d ", i);
+    }
+    return 0;
+}
+40.Range using while
+#include <stdio.h>
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+    while(a <= b) {
+        printf("%d ", a);
+        a++;
+    }
+    return 0;
+}
+
+41. Range using do-while
+#include <stdio.h>
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+    do {
+        printf("%d ", a);
+        a++;
+    } while(a <= b);
+    return 0;
+}
+
+42. Range using for
+#include <stdio.h>
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+    for(int i = a; i <= b; i++) {
+        printf("%d ", i);
+    }
+    return 0;
+}
+
+43. Even numbers in range
+#include <stdio.h>
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+    for(int i = a; i <= b; i++) {
+        if(i % 2 == 0)
+            printf("%d ", i);
+    }
+    return 0;
+}
+
+44. Odd numbers in range
+#include <stdio.h>
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+    for(int i = a; i <= b; i++) {
+        if(i % 2 != 0)
+            printf("%d ", i);
+    }
+    return 0;
+}
+
+45. Sum of range
+#include <stdio.h>
+int main() {
+    int a, b, sum = 0;
+    scanf("%d %d", &a, &b);
+    for(int i = a; i <= b; i++) {
+        sum += i;
+    }
+    printf("Sum = %d", sum);
+    return 0;
+}
+
+46. Sum of even numbers
+
